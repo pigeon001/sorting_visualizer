@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualizer</title>
+        <link rel="stylesheet" href="visualizer.css" type="text/css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Sorting Visualizer</h1>
+        <div class="container">
+            <form action id="form" method="post">
+                <label for="array">Enter the space seperated elements of array:</label>
+                <!-- <input type="text" id="array" name="array"> -->
+                <textarea name="array" id="array" cols="3" rows="10" wrap="hard"
+                    maxlength="100"
+                    placeholder="enter numbers as array input" autocomplete="on"></textarea>
+                <select name="algo" id="opt">
+                    <option value>---Select any sorting algorithm---</option>
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                </select>
+                <label for="animTime">Animation Time:</label>
+                <input type="range" id="animTime" min="0" max="6" step="0.25">
+                <input type="submit" value="Start">
+            </form>
+        </div>
+        <div class="main" id="main">
+        </div>
+        <div class="watermark">
+            <img
+                src="https://imgs.search.brave.com/KAN7PWOT-jJ67n-ym-uRl677FVxlTqkI4XO1CNTz4wY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvODAwOS84MDA5/NjA1LnBuZw"
+                alt="rotate your phone" style="width: 200px;margin: 0 auto;">
+            <p style="margin: 0;">Rotate your device for better exprience</p><br />
+        </div>
+        <script src="visualizer.js" async></script>
+    </body>
+
+</html>
